@@ -1,0 +1,442 @@
+/* Reset mặc định */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cv-header {
+    background-color: #155288;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.cv-header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cv-header .info {
+    flex-grow: 1;
+}
+
+.cv-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.cv-header h2 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #d4e6f5;
+}
+
+.cv-header p {
+    margin-top: 10px;
+}
+
+/* Contact */
+.contact {
+    background-color: #cae3fa;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0 0;
+    padding: 15px;
+    border-radius: 0px;
+    margin-top: 0;
+}
+
+.contact .action-buttons {
+    width: fit-content;
+    margin: 0 15px 15px;
+    padding: 5px 10px;
+}
+
+.contact-info span {
+    font-size: 16px;
+    color: #155288;
+}
+
+/* Tiêu đề từng phần */
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #155288;
+    border-bottom: 2px solid #155288;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Phần Học vấn */
+.education,
+.experience,
+.skills {
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    padding: 15px; /* Thêm padding cho các phần */
+    border-radius: 8px;
+    background-color: #fff; /* Thêm màu nền cho từng phần */
+}
+
+.education-item,
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item ul,
+.education-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.education-header,
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-header h3,
+.experience-header h3,
+.skills li {
+    font-size: 20px;
+    color: #444;
+    width: 48%;
+}
+
+/* Danh sách kỹ năng */
+.skills ul {
+    list-style: disc;
+    padding-left: 20px; /* Thêm khoảng cách giữa dấu chấm và nội dung */
+    font-size: 20px;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Nền phần kỹ năng */
+.skills {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Nút hành động */
+.action-buttons {
+    margin-top: 10px;
+}
+
+a.action-buttons {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    color: #fff;
+    background-color: #7eb4e2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a.action-buttons:hover {
+    background-color: #87939d;
+}
+
+.skills h2,
+.experience h2,
+.education h2 {
+    margin-right: 20px;
+}
+
+.skills li {
+    width: 100%;
+}
+
+.skills-list-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-list-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-list-item h3 {
+    width: fit-content;
+}
+
+.education-list-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.education-list-item h3 {
+    width: fit-content;
+}
+
+span.time {
+    width: fit-content;
+    flex-basis: 20%;
+    text-align: right;
+}
+
+.update-button {
+    text-decoration: none;
+    color: white;
+    background-color: #7eb4e2;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    right: 22%;
+    top: 60px;
+    float: right;
+}
+
+.experience-item p {
+    width: 70%;
+}
+
+/* form  */
+.form-title {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-input input,
+.form-input textarea,
+.form-input select {
+    margin-bottom: 15px;
+    padding: 7px 15px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 133, 133);
+}
+.form-input label {
+    margin: 6px 0;
+}
+
+.form-submit-button {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit-button button {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #7eb4e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgb(220, 220, 220);
+}
+
+.form-submit-button button:hover {
+    background-color: #87939d;
+}
+
+.container-update {
+    width: 30%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px 50px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-range-year,
+.input-range-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-range-year input,
+.input-range-date input {
+    width: 150px;
+}
+
+/* toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+    z-index: 9999;
+}
+
+.toast.hidden {
+    bottom: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toast.visible {
+    bottom: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.toast.success {
+    background-color: #78c27f;
+}
+
+.toast.error {
+    background-color: #f44336;
+}
+
+/* modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-actions {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.modal-content p {
+    /* display: block; */
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background: rgb(201, 201, 201);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+.confirm-button {
+    background: #bf1e2d;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background: #9e1422;
+}
+
+.contact-info a {
+    color: inherit;
+}
